@@ -12,5 +12,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("connected");
 });
-
-console.log("connected");
