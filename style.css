@@ -22,3 +22,31 @@ body {
   color: black;
   font-size: 20px;
 }
+
+.content {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.qusition {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answers {
+  display: none;
+  margin-top: 10px;
+}
+.answers.active {
+  display: block;
+}
+.icon {
+  font-size: 1.2em;
+  transition: transform 0.2s ease-in-out;
+}
+.icon.rotate {
+  transform: rotate(45deg);
+}

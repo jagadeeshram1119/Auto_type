@@ -12,3 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   console.log("connected");
 });
+
+const questions = document.querySelectorAll(".qusition");
+
+questions.forEach((question) => {
+  question.addEventListener("click", () => {
+    const answer = question.nextElementSibling;
+    const icon = question.querySelector(".icon");
+
+    answer.classList.toggle("active");
+    icon.classList.toggle("rotate");
+
+    if (icon.textContent === "+") {
+      icon.textContent = "x";
+    } else {
+      icon.textContent = "+";
+    }
+  });
+});
